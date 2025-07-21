@@ -1,0 +1,5 @@
+admin@gmail.com
+coordinador@gmail.com
+usuario@gmail.com
+
+contraseña: 123456
