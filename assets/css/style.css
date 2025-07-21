@@ -1,0 +1,201 @@
+:root {
+  --primary_color: #006a71;
+  --second_color: #48a6a7;
+  --dark_color: #00565c;
+  --light_color: #F2FEFF;
+  --gray: #d3d3d3b6;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e5e5e5;
+  font-family: "Inter", sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+}
+nav li .linea {
+  border-radius: 10px;
+}
+
+nav li .linea:hover {
+  color: black;
+  box-shadow: 2px 2px 2px var(--gray);
+}
+
+nav li .linea:active {
+  color: black;
+  box-shadow: 2px 2px 2px var(--gray);
+  background: var(--gray);
+}
+
+.color_fondo {
+  background: var(--primary_color);
+}
+
+.logo img {
+  height: 50px;
+}
+
+.login img {
+  height: 100vh;
+  width: 100%;
+}
+
+.tarjeta {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.inicio .boton {
+  background: var(--primary_color);
+  color: white;
+}
+
+.inicio .boton:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.login .boton {
+  background: var(--primary_color);
+  color: white;
+}
+
+.login .boton:hover {
+  background: var(--dark_color);
+  color: white;
+}
+
+.login .boton:active {
+  background: transparent;
+  outline: white;
+  color: white;
+}
+
+.texto-verde {
+  color: var(--second_color);
+}
+
+.botones {
+  background: var(--primary_color);
+  color: white;
+}
+.botones:hover {
+  background: var(--dark_color);
+  color: white;
+}
+
+.botones:active {
+  background: transparent;
+  outline: var(--dark_color);
+  color: var(--dark_color);
+}
+.form-control:focus {
+  border-color: var(--primary_color) !important;
+  box-shadow: 0 0 5px var(--primary_color) !important;
+}
+
+/* Cambiar el color del autocompletado del input */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--light_color) inset !important; /* Fondo verde claro */
+  box-shadow: 0 0 0 1000px var(--light_color) inset !important;
+  -webkit-text-fill-color: var(--primary_color) !important; /* Texto verde oscuro */
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* También útil para inputs con bordes verdes */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  border: 1px solid var(--primary_color) !important;
+}
+
+.step {
+  font-weight: bold;
+  padding: 10px;
+  border-left: 5px solid transparent;
+}
+.step.active {
+  border-color: var(--primary_color);
+  background-color: var(--light_color);
+  color: var(--primary_color);
+}
+.progress-bar {
+  background-color: var(--primary_color);
+}
+
+.selecciones:hover {
+  background-color: var(--light_color);
+}
+
+.selecciones:active {
+  background-color: var(--primary_color);
+}
+
+/* nav iconos */
+.icon-opacity {
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.icon-opacity:hover {
+  opacity: 1;
+}
+
+/* menu desplegable */
+/* Cambiar color de fondo del dropdown */
+.custom-dropdown {
+  background-color: white; 
+}
+
+/* Color del texto normal */
+.custom-dropdown .dropdown-item {
+  color: black;
+}
+
+/* Al pasar el mouse */
+.custom-dropdown .dropdown-item:hover {
+  background-color: var(--light_color); /* Color claro al pasar el ratón */
+  color: black;
+}
+
+/* Al enfocar con el teclado o clic */
+.custom-dropdown .dropdown-item:focus {
+  background-color: var(--light_color);
+  color: black;
+  outline: none;
+}
+
+/* Al hacer clic */
+.custom-dropdown .dropdown-item:active {
+  background-color: var(--primary_color);
+  color: white;
+}
+
+
+.bg-success{
+  background-color: var(--primary_color)!important;
+}
+.border-success{
+  border-color: var(--dark_color)!important;
+}
+.text-success{
+  color: var(--dark_color) !important;
+}
+
+
+    /* Personaliza el fondo del menú desplegable */
+    .choices__list--dropdown, .choices__list[aria-expanded] {
+      background-color: #006a71 !important;
+    }
+
+    /* Personaliza el color del texto */
+    .choices__list--dropdown .choices__item {
+      color: white;
+    }
+
+    /* Hover */
+    .choices__list--dropdown .choices__item--selectable.is-highlighted {
+      background-color: #004d52;
